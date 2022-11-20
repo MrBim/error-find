@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-type Props = {};
+import styles from './ChooseQuiz.module.css';
 
 const ChooseQuiz = () => {
   return (
     <div>
-      <div>
-        <Link to="/quiz/activity_one">Quiz 1</Link>
+      <div className={styles.enabledQuiz}>
+        <Link to="/quiz/activity_one">ACTIVITY ONE</Link>
       </div>
-      <div>
-        <Link to="/quiz/activity_two">Quiz 2</Link>
+      <div className={styles.enabledQuiz}>
+        <Link to="/quiz/activity_two">ACTIVITY TWO</Link>
       </div>
-      <div>
-        <span>Quiz 3</span>
+      <div className={styles.disabledQuiz}>
+        <span>ACTIVITY THREE</span>
       </div>
-      <div>
-        <span>Quiz 4</span>
+      <div className={styles.disabledQuiz}>
+        <span>ACTIVITY FOUR</span>
       </div>
-      <div>
-        <span>Quiz 5</span>
+      <div className={styles.disabledQuiz}>
+        <span>ACTIVITY FIVE</span>
       </div>
     </div>
   );

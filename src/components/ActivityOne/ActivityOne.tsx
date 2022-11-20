@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ActivityOneResults from "../ActivityOneResults/ActivityOneResults";
 import Question from "../Question/Question";
 import styles from "./ActivityOne.module.css";
+
 type Props = {
   quiz: apiActivityOne | null;
 };

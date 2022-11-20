@@ -3,12 +3,10 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { getQuestions } from "../../scripts/network-functions";
 import { data } from "../../data/data";
-// import Question from "../../components/Question/Question";
 import ActivityOne from "../../components/ActivityOne/ActivityOne";
 import ActivityTwo from "../../components/ActivityTwo/ActivityTwo";
-type Props = {};
 
-const Quiz = (props: Props) => {
+const Quiz = () => {
   const { quizType } = useParams();
   // const { data, error } = useQuery("questions", getQuestions);
   const [currentQuiz, setCurrentQuiz] = useState<
